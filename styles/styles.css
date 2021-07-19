@@ -1,0 +1,43 @@
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 25%, rgba(121,9,103,1) 48%, rgba(0,212,255,1) 100%);
+}
+.navbar a {
+    color:white;
+}
+
+#section1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://i.imgur.com/ZZgjt8I.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+section {
+    padding-top: 40px;
+    height: 100vh;
+    
+}
+
+
+#s1p {
+    font-size: 1.5rem;
+    color:white;
+    margin-left: 20px;
+}
+
+
+#s1text {
+    color: white;
+    font-size: 4rem;
+}
