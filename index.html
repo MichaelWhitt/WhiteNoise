@@ -24,12 +24,12 @@
     
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img width="30" height="30" src="https://michaeldwhitt.com/wp-content/uploads/2021/03/icons8-approval-96.png"/>Logo</a>
+            <a class="navbar-brand" href="#"><img width="40" height="40" src="https://michaeldwhitt.com/wp-content/uploads/2021/07/wn2.png"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNav">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-2"> <!--Use ml-auto here for moving navlinks right-->
                 <li class="nav-item active ">
                   <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
@@ -61,16 +61,26 @@
     </section>
     
     <section id="section2" class="scroll-page">
-        <div class="container">
+
+
+        <div class="container" id="lines">
             <div class="row">
-                <div class="col-4" style="font-size:55px;">HELLO</div>
-                <div class="col-4" style="font-size:55px;">HELLO</div>
-                <div class="col-4" style="font-size:55px;">HELLO</div>
-                
-                
-                
+                <div id="dot1"></div>
+                <div class="mt-3" id="line1"></div>
+                <div id="dot2"></div>
+                <div id="linesdiv1">
+                  <img id="linesimg1" onclick="playAudio('693857main_emfisis_chorus_1.mp3')" src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg"/>
+                  <span id="linesimgspan">Earth Chorus</span>
+                </div>
+                <div id="dot3"></div>
+                <div id="line2"></div>
+                <div id="dot4"></div>
+                <div id="linesdiv2">
+                  <img id="linesimg1" onclick="playAudio('693857main_emfisis_chorus_1.mp3')" src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg"/>
+                  <span id="linesimgspan">Earth Chorus</span>
+                </div>
             </div>
-        </div>
+          </div>
     </section>
 
 
@@ -79,6 +89,13 @@
     
 <footer>
 
+    <script>
+  function playAudio(url){
+    new Audio(url).play();
+    // document.getElementById("linesimg1").loop = true;
+}
+
+    </script>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
